@@ -9,6 +9,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+" GO SHENANIGANS
+" **************
+Plugin 'fatih/vim-go'
+
+" JAVASCRIPT SHENANIGANS
+" **********************
 Plugin 'pangloss/vim-javascript'
 
 " Keep Plugin commands between vundle#begin/end.
