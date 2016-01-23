@@ -1,4 +1,3 @@
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # The following lines were added by compinstall
 
@@ -16,3 +15,8 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+# mine
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
