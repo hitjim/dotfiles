@@ -40,21 +40,6 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # lets us do crap like this https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=/home/hitjim/.cfg/ --work-tree=/home/hitjim'
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-	PATH="$HOME/bin:$PATH"
-fi
-
-# set PATH so it includes user's go bin if it exists
-if [ -d "$HOME/go/bin" ] ; then
-	PATH="$HOME/go/bin:$PATH"
-fi
-
-# set PATH so it includes go bin if it exists
-if [ -d "/usr/local/go/bin" ] ; then
-    PATH="/usr/local/go/bin:$PATH"
-fi
-
 # lightweight powerline-like prompt - doesn't require fancy fonts
 # https://github.com/justjanne/powerline-go
 function powerline_precmd() {
