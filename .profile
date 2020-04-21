@@ -30,3 +30,5 @@ fi
 if [ -d "/usr/local/go/bin" ] ; then
     PATH="/usr/local/go/bin:$PATH"
 fi
+
+export PATH=$PATH:/usr/local/go/bin
