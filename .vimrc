@@ -3,6 +3,9 @@
 syntax on
 filetype plugin indent on
 
+" File operations
+set autowrite " save on :make - most useful with vim-go :GoBuild
+
 " Numbers
 :set number relativenumber
 
