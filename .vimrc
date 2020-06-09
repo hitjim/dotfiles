@@ -1,6 +1,9 @@
 " NORMAL VIM THINGS 
 "*******************
-syntax on
+if !exists("g:syntax_on")
+	syntax enable
+endif
+
 filetype plugin indent on
 
 " File operations
@@ -27,6 +30,9 @@ set breakindent breakindentopt=shift:12,min:40,sbr
 
 set cc=100
 hi ColorColumn ctermbg=blue guibg=lightgrey
+
+packadd! dracula
+colorscheme dracula
 
 " File types
 au BufRead,BufNewFile *.md set filetype=markdown

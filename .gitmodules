@@ -7,3 +7,6 @@
 [submodule ".vim/pack/plugins/start/vim-go"]
 	path = .vim/pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "/home/hitjim/.vim/pack/themes/start/dracula"]
+	path = /home/hitjim/.vim/pack/themes/start/dracula
+	url = https://github.com/dracula/vim.git
