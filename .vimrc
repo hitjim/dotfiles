@@ -31,8 +31,20 @@ set breakindent breakindentopt=shift:12,min:40,sbr
 set cc=100
 hi ColorColumn ctermbg=blue guibg=lightgrey
 
+" Colors
+" required to use `set termguicolors`
+if exists('termguicolors')
+  set termguicolors
+endif
+
+" fixes glitch? in colors when using vim with tmux
+set background=dark
+
+" theme
 packadd! dracula
+syntax enable
 colorscheme dracula
 
 " File types
-au BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd Filetype html setlocal ts=2 sw=2 expandtab

@@ -13,3 +13,9 @@ if [ -d "/usr/local/go/bin" ] ; then
     PATH="/usr/local/go/bin:$PATH"
 fi
 
+# 256 colors
+if [ -e /usr/share/terminfo/x/xterm+256color ]; then
+  export TERM='xterm-256color'
+else
+  export TERM='xterm-color'
+fi
