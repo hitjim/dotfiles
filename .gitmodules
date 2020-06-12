@@ -1,9 +1,3 @@
-[submodule ".vim/pack/plugins/opt/vim-sensible"]
-	path = .vim/pack/plugins/opt/vim-sensible
-	url = https://github.com/tpope/vim-sensible.git
-[submodule ".vim/pack/plugins/start/vim-go"]
-	path = .vim/pack/plugins/start/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "/home/hitjim/.vim/pack/themes/start/dracula"]
 	path = /home/hitjim/.vim/pack/themes/start/dracula
 	url = https://github.com/dracula/vim.git
