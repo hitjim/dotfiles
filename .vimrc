@@ -33,7 +33,8 @@ call plug#begin(expand('~/.vim/plugged'))
 
 " Plugins
 " ---------------------------------------------------
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -50,6 +51,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Languages
 Plug 'fatih/vim-go'
+
+" NERDTree
+let NERDTreeShowHidden=1
 
 " Themes
 Plug 'NLKNguyen/papercolor-theme'
