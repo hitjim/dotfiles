@@ -43,7 +43,7 @@ alias config='/usr/bin/git --git-dir=/home/hitjim/.cfg/ --work-tree=/home/hitjim
 # lightweight powerline-like prompt - doesn't require fancy fonts
 # https://github.com/justjanne/powerline-go
 function powerline_precmd() {
-    PS1="$($HOME/go/bin/powerline-go -error $? -shell zsh -colorize-hostname -cwd-mode plain -mode flat)"
+    PS1="$($HOME/go/bin/powerline-go -error $? -shell zsh -colorize-hostname -cwd-mode plain -mode flat -newline)"
 }
 
 function install_powerline_precmd() {

@@ -45,6 +45,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
+Plug 'vimwiki/vimwiki'
+Plug 'cespare/vim-toml'
 
 " LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -54,9 +56,15 @@ Plug 'fatih/vim-go'
 
 " NERDTree
 let NERDTreeShowHidden=1
+"set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
+"let NERDTreeRespectWildIgnore=1
 
 " Themes
 Plug 'NLKNguyen/papercolor-theme'
+
+" Wiki
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_global_ext = 0 " only use vimwiki on md files in the wiki
 
 call plug#end()
 
@@ -66,6 +74,7 @@ call plug#end()
 if !exists("g:syntax_on")
 	syntax enable
 endif
+syntax on
 
 set backspace=indent,eol,start  " more powerful backspacing
 
