@@ -106,6 +106,8 @@ set cc=100
 hi ColorColumn ctermbg=blue guibg=lightgrey
 
 " Colors
+set t_Co=256
+
 " required to use `set termguicolors`
 if exists('termguicolors')
   set termguicolors
