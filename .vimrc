@@ -43,7 +43,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
 Plug 'cespare/vim-toml'
@@ -61,6 +61,7 @@ let NERDTreeShowHidden=1
 
 " Themes
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'liuchengxu/space-vim-dark'
 
 " Wiki
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
@@ -113,7 +114,7 @@ endif
 
 " fixes glitch? in colors when using vim with tmux
 set background=dark
-colorscheme PaperColor
+colorscheme space-vim-dark
 
 " File types
 autocmd BufRead,BufNewFile *.md set filetype=markdown
