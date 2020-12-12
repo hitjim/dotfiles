@@ -54,17 +54,16 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Languages
 Plug 'fatih/vim-go'
 
-" NERDTree
-let NERDTreeShowHidden=1
-"set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
-"let NERDTreeRespectWildIgnore=1
 
 " Themes
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'liuchengxu/space-vim-dark'
 
 " Wiki
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+" Define $VIMWIKI_PATH in ~/.zshenv
+" i.e. `export VIMWIKI_PATH=/cloud/storage/path`
+" And DON'T track the .zshenv in dotfiles repo
+let g:vimwiki_list = [{'path': $VIMWIKI_PATH, 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_global_ext = 0 " only use vimwiki on md files in the wiki
 
 call plug#end()
@@ -76,6 +75,9 @@ if !exists("g:syntax_on")
 	syntax enable
 endif
 syntax on
+
+" Never need to edit these. If you really need them, use the terminal
+set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*
 
 set backspace=indent,eol,start  " more powerful backspacing
 
@@ -121,3 +123,17 @@ colorscheme space-vim-dark
 " File types
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
+
+"****************
+" Plugin Settings
+"****************
+
+" NERDTree
+" https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt
+let NERDTreeShowHidden=1
+let NERDTreeRespectWildIgnore=1
+let NERDTreeChDirMode=0
+let NERDTreeSortOrder=['\/$', '^main.go$', '^main_test.go$', '^[A-Z].*\.go$', '\.go$']
+
+nmap <Leader>e :NERDTreeToggle<CR>
+nmap <Leader>F :NERDTreeFind<CR>
