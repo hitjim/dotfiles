@@ -53,7 +53,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Languages
 Plug 'fatih/vim-go'
-
+Plug 'pangloss/vim-javascript'
 
 " Themes
 Plug 'NLKNguyen/papercolor-theme'
