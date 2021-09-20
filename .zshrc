@@ -40,11 +40,11 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 case `uname` in
 	Darwin)
 		# commands for OS X
-		alias config='/usr/bin/git --git-dir=/Users/hitjim/.cfg/ --work-tree=/Users/hitjim'
+		alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 		;;
 	Linux)
 		# commands for Linux
-		alias config='/usr/bin/git --git-dir=/home/hitjim/.cfg/ --work-tree=/home/hitjim'
+		alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 		;;
 	esac
 
