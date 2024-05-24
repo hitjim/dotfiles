@@ -21,3 +21,8 @@ elif [ -e /usr/share/terminfo/78/xterm+256color ]; then
 else
   export TERM='xterm-color'
 fi
+
+# homebrew wanted this
+if [ -d "/opt/homebrew/bin" ] ; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
