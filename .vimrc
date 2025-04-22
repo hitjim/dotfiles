@@ -45,7 +45,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 "Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
-Plug 'vimwiki/vimwiki'
+"Plug 'vimwiki/vimwiki'
 Plug 'cespare/vim-toml'
 
 " LSP
