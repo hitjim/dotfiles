@@ -63,8 +63,8 @@ Plug 'liuchengxu/space-vim-dark'
 " Define $VIMWIKI_PATH in ~/.zshenv
 " i.e. `export VIMWIKI_PATH=/cloud/storage/path`
 " And DON'T track the .zshenv in dotfiles repo
-let g:vimwiki_list = [{'path': $VIMWIKI_PATH, 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_global_ext = 0 " only use vimwiki on md files in the wiki
+"let g:vimwiki_list = [{'path': $VIMWIKI_PATH, 'syntax': 'markdown', 'ext': '.md'}]
+"let g:vimwiki_global_ext = 0 " only use vimwiki on md files in the wiki
 
 call plug#end()
 
